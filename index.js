@@ -1,13 +1,9 @@
 function isPalindrome(word) {
-  const splitArray = word.split('');
-  const reverseArray = splitArray.reverse();
-  const jointArray = reverseArray.join('')
-  if(jointArray === word){
-    return true
-  } else {
-    return false
+ const result = word.split('').reverse().join('')
+ return word === result
   }
-}
+
+
 
 /* 
   Add your pseudocode here\
@@ -21,21 +17,10 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
-    create a function and pass in a parameter
-      function isPalindrome(word) {
-    split the string into a array of strings
-        const splitArray = word.split('');
-    reverse the array of strings
-        const reverseArray = splitArray.reverse();
-    rejoin the reversed array
-        const jointArray = reverseArray.join('')
-    if the result is = to the passed in word return true otherwise return false
-        if(jointArray === word){
-          return true
-        } else {
-          return false
-        }
-      }
+   .split creates a array of string
+   .reverse reverses array
+   .join rejoins the array
+    === compare word vs revesed
   
 */
 
