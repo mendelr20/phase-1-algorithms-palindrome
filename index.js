@@ -21,18 +21,22 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
-
-  function isPalindrome(word) {
-  const splitArray = word.split('');
-  const reverseArray = splitArray.reverse();
-  const jointArray = reverseArray.join('')
-  if(jointArray === word){
-    return true
-  } else {
-    return false
-  }
-}
-
+    create a function and pass in a parameter
+      function isPalindrome(word) {
+    split the string into a array of strings
+        const splitArray = word.split('');
+    reverse the array of strings
+        const reverseArray = splitArray.reverse();
+    rejoin the reversed array
+        const jointArray = reverseArray.join('')
+    if the result is = to the passed in word return true otherwise return false
+        if(jointArray === word){
+          return true
+        } else {
+          return false
+        }
+      }
+  
 */
 
 // You can run `node index.js` to view these console logs
